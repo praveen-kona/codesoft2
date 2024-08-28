@@ -1,10 +1,11 @@
+
 import random
 while True:
-    print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
-      + "Rock vs Paper -> Paper wins \n"
-      + "Rock vs Scissors -> Rock wins \n"
-      + "Paper vs Scissors -> Scissor wins \n")
-    user_choice=input("enter user choice:")
+    print('Winning rules of the game rock paper scissors are :\n'
+      + "Rock vs Paper -> paper wins \n"
+      + "Rock vs Scissors -> rock wins \n"
+      + "Paper vs Scissors -> scissor wins \n")
+    user_choice=input("enter user choice (rock paper scissors):").lower()
     choice=["rock","paper","scissors"]
     computer_choice=random.choice(choice)
     print("you choose",user_choice)
@@ -27,4 +28,5 @@ while True:
         print("Invalid choice.Please enter correct choice:")
     play_again=input("play again? (yes/no):")
     if play_again=="no":
+        print("thanks for playing")
         break
