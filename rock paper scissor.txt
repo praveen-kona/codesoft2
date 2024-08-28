@@ -5,7 +5,7 @@ while True:
       + "Rock vs Paper -> paper wins \n"
       + "Rock vs Scissors -> rock wins \n"
       + "Paper vs Scissors -> scissor wins \n")
-    user_choice=input("enter user choice (rock paper scissors):").lower()
+    user_choice=input("enter user choice (rock paper scissors):")
     choice=["rock","paper","scissors"]
     computer_choice=random.choice(choice)
     print("you choose",user_choice)
